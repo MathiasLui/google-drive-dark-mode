@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google Drive Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      1
+// @version      2
 // @description  A dark mode for the Google Drive website
 // @author       Matty
 // @match        https://drive.google.com/*
@@ -80,6 +80,10 @@
     tr[role="option"] {
         color: #d2d2d2 !important;
         background-color: #cfcfcf !important;
+    }
+
+    form[role="search"]:focus-within {
+        background: #292929 !important;
     }
     `;
 
